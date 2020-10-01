@@ -12,6 +12,12 @@ const run = async () => {
       height: 1080
   })
 
+  await page.goto('https://slickdeals.net/')
+  await page.screenshot({
+      path: 'slickdeals-frontpage.png',
+      fullPage: true
+  })
+
   await page.goto('https://slickdeals.net/deals/')
   await page.screenshot({
       path: 'slickdeals-new.png',
