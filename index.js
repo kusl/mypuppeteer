@@ -24,6 +24,13 @@ const run = async () => {
       fullPage: true
   })
 
+
+  await page.goto('https://old.reddit.com/user/7165015874/m/buy/new/')
+  await page.screenshot({
+      path: 'reddit-hardwareswap-new.png',
+      fullPage: true
+  })
+
   await page.goto('https://www.amazon.com/gp/goldbox')
   await page.screenshot({
       path: 'amazon-goldbox.png',
