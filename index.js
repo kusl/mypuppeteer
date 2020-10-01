@@ -12,6 +12,12 @@ const run = async () => {
       height: 1080
   })
 
+  await page.goto('https://slickdeals.net/deals/')
+  await page.screenshot({
+      path: 'amazon-goldbox.png',
+      fullPage: true
+  })
+
   await page.goto('https://www.amazon.com/gp/goldbox')
   await page.screenshot({
       path: 'amazon-goldbox.png',
