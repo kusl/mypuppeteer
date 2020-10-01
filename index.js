@@ -18,6 +18,12 @@ const run = async () => {
       fullPage: true
   })
 
+  await page.goto('https://www.amazon.com/best-sellers-camera-photo/zgbs/photo/')
+  await page.screenshot({
+      path: 'amazon-bestsellers-camera.png',
+      fullPage: true
+  })
+
   // close the browser 
   await browser.close();
 };
