@@ -24,6 +24,12 @@ const run = async () => {
       fullPage: true
   })
 
+  await page.goto('https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/')
+  await page.screenshot({
+      path: 'amazon-bestsellers-electronics.png',
+      fullPage: true
+  })
+
   // close the browser 
   await browser.close();
 };
