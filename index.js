@@ -55,6 +55,13 @@ const run = async () => {
       fullPage: true
   })
 
+
+  await page.goto('https://old.reddit.com/r/random/', {"waitUntil" : "networkidle0"})
+  await page.screenshot({
+      path: 'reddit-random.png',
+      fullPage: true
+  })
+
   // close the browser 
   await browser.close();
 };
