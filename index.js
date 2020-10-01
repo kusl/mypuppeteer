@@ -14,7 +14,13 @@ const run = async () => {
 
   await page.goto('https://slickdeals.net/deals/')
   await page.screenshot({
-      path: 'amazon-goldbox.png',
+      path: 'slickdeals-new.png',
+      fullPage: true
+  })
+
+  await page.goto('https://news.ycombinator.com/newest')
+  await page.screenshot({
+      path: 'hackernews-new.png',
       fullPage: true
   })
 
