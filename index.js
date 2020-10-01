@@ -30,7 +30,6 @@ const run = async () => {
       fullPage: true
   })
 
-
   await page.goto('https://old.reddit.com/user/7165015874/m/buy/new/', {"waitUntil" : "networkidle0"})
   await page.screenshot({
       path: 'reddit-hardwareswap-new.png',
@@ -55,6 +54,17 @@ const run = async () => {
       fullPage: true
   })
 
+  await page.goto('https://www.nytimes.com/', {"waitUntil" : "networkidle2"})
+  await page.screenshot({
+      path: 'nytimes-home.png',
+      fullPage: true
+  })
+  
+  await page.goto('https://www.washingtonpost.com/', {"waitUntil" : "networkidle2"})
+  await page.screenshot({
+      path: 'washingtonpost-home.png',
+      fullPage: true
+  })
 
   await page.goto('https://old.reddit.com/r/random/', {"waitUntil" : "networkidle0"})
   await page.screenshot({
