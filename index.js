@@ -71,6 +71,12 @@ const run = async () => {
       path: 'reddit-random.png',
       fullPage: true
   })
+  
+  await page.goto('https://www.aliexpress.com/item/4001328159542.html', {"waitUntil" : "networkidle0"})
+  await page.screenshot({
+      path: 'poco-x3.png',
+      fullPage: true
+  })
 
   // close the browser 
   await browser.close();
