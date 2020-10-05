@@ -53,6 +53,12 @@ const run = async () => {
       path: 'amazon-bestsellers-electronics.png',
       fullPage: true
   })
+  
+  await page.goto('https://www.amazon.com/dp/B08J5J7BF1/', {"waitUntil" : "networkidle0"})
+  await page.screenshot({
+      path: 'amazon-ipad-128.png',
+      fullPage: true
+  })
 
   await page.goto('https://www.nytimes.com/', {"waitUntil" : "networkidle2"})
   await page.screenshot({
