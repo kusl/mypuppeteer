@@ -12,49 +12,49 @@ const run = async () => {
       height: 1080
   })
 
-  await page.goto('https://slickdeals.net/', {"waitUntil" : "networkidle0"})
+  await page.goto('https://slickdeals.net/', {"waitUntil" : "networkidle2"})
   await page.screenshot({
       path: 'slickdeals-frontpage.png',
       fullPage: true
   })
 
-  await page.goto('https://slickdeals.net/deals/', {"waitUntil" : "networkidle0"})
+  await page.goto('https://slickdeals.net/deals', {"waitUntil" : "networkidle2"})
   await page.screenshot({
       path: 'slickdeals-new.png',
       fullPage: true
   })
 
-  await page.goto('https://news.ycombinator.com/newest', {"waitUntil" : "networkidle0"})
+  await page.goto('https://news.ycombinator.com/newest', {"waitUntil" : "networkidle2"})
   await page.screenshot({
       path: 'hackernews-new.png',
       fullPage: true
   })
 
-  await page.goto('https://old.reddit.com/user/7165015874/m/buy/new/', {"waitUntil" : "networkidle0"})
+  await page.goto('https://old.reddit.com/user/7165015874/m/buy/new/', {"waitUntil" : "networkidle2"})
   await page.screenshot({
       path: 'reddit-hardwareswap-new.png',
       fullPage: true
   })
 
-  await page.goto('https://www.amazon.com/gp/goldbox', {"waitUntil" : "networkidle0"})
+  await page.goto('https://www.amazon.com/gp/goldbox', {"waitUntil" : "networkidle2"})
   await page.screenshot({
       path: 'amazon-goldbox.png',
       fullPage: true
   })
 
-  await page.goto('https://www.amazon.com/best-sellers-camera-photo/zgbs/photo/', {"waitUntil" : "networkidle0"})
+  await page.goto('https://www.amazon.com/best-sellers-camera-photo/zgbs/photo/', {"waitUntil" : "networkidle2"})
   await page.screenshot({
       path: 'amazon-bestsellers-camera.png',
       fullPage: true
   })
 
-  await page.goto('https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/', {"waitUntil" : "networkidle0"})
+  await page.goto('https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/', {"waitUntil" : "networkidle2"})
   await page.screenshot({
       path: 'amazon-bestsellers-electronics.png',
       fullPage: true
   })
   
-  await page.goto('https://www.amazon.com/dp/B08J5J7BF1/', {"waitUntil" : "networkidle0"})
+  await page.goto('https://www.amazon.com/dp/B08J5J7BF1/', {"waitUntil" : "networkidle2"})
   await page.screenshot({
       path: 'amazon-ipad-128.png',
       fullPage: true
@@ -72,13 +72,13 @@ const run = async () => {
       fullPage: true
   })
 
-  await page.goto('https://old.reddit.com/r/random/', {"waitUntil" : "networkidle0"})
+  await page.goto('https://old.reddit.com/r/random/', {"waitUntil" : "networkidle2"})
   await page.screenshot({
       path: 'reddit-random.png',
       fullPage: true
   })
   
-  await page.goto('https://www.aliexpress.com/item/4001328159542.html', {"waitUntil" : "networkidle0"})
+  await page.goto('https://www.aliexpress.com/item/4001328159542.html', {"waitUntil" : "networkidle2"})
   await page.screenshot({
       path: 'poco-x3.png',
       fullPage: true
